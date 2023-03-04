@@ -209,9 +209,9 @@ ul.two-column li {
   padding-left: 0;
 }
 
-@page {
+/* @page {
   size: A4;
-}
+} */
 
 .container {
   padding-top: 10px;
@@ -255,6 +255,7 @@ ul.two-column li {
 
 .summary {
   margin: 5px 0;
+  text-align: justify;
 }
 
 .summary br {
@@ -293,13 +294,17 @@ ul.two-column li {
 
 .left-column {
   float: left;
-  width: 230px;
+  width: 35%;
   margin-right: 20px;
 }
 
 .right-column {
   width: auto;
   overflow: hidden;
+}
+
+.right-column li {
+  text-align: justify;
 }
 
 .item {
@@ -312,7 +317,13 @@ ul.two-column li {
 
 .item .skills {
   padding-top: 5px;
+  padding-right: 12px;
   padding-bottom: 8px;
+}
+
+.section-header {
+  display: inline;
+  vertical-align: bottom;
 }
 
 .item:last-child .skills {
@@ -335,7 +346,7 @@ ul.two-column li {
 
   .page .resume-header,
   .page .resume-content {
-    padding: 0 22px 0 34px;
+    padding: 0 34px 0 34px;
   }
 
   .container {
