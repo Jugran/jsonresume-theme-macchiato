@@ -3,6 +3,7 @@
 /*----- Fonts -----*/
 /*----- Dimensions and sizes -----*/
 /* Base */
+
 @font-face {
   font-family: 'Josefin Sans';
   font-style: normal;
@@ -90,7 +91,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   letter-spacing: .5px;
@@ -99,7 +100,7 @@ h2 {
 h3 {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: .4px;
 }
 
@@ -110,7 +111,7 @@ h3.bold {
 h4 {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 h4.bold {
@@ -149,7 +150,7 @@ a .fa-external-link {
 
 p,
 li {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 blockquote {
@@ -164,13 +165,27 @@ em {
   color: #999;
 }
 
+.list-section li {
+  padding-top: 4px;
+}
+
+.list-section li:last-child {
+  padding-top: 4px;
+  padding-bottom: 6px;
+}
+
+.list-section {
+  margin: 0;
+}
+
 ul {
-  margin: 10px 0 0;
+  margin: 10px 0 10px;
   -webkit-padding-start: 25px;
+  padding-left: 18px;
 }
 
 ul li {
-  padding-left: 10px;
+  padding-left: 6px;
 }
 
 ul.minimal {
@@ -199,7 +214,11 @@ ul.two-column li {
 }
 
 .container {
-  padding-top: 20px;
+  padding-top: 10px;
+}
+
+.about-container {
+  padding-top: 10px;
 }
 
 .keyline {
@@ -235,7 +254,13 @@ ul.two-column li {
 }
 
 .summary {
-  margin: 5px 0 5px;
+  margin: 5px 0;
+}
+
+.summary br {
+  display: block;
+  content: "";
+  margin: 5px 0;
 }
 
 .sublink {
@@ -256,7 +281,7 @@ ul.two-column li {
   display: block;
   margin: 0 auto;
   border-top: 10px solid #56817A;
-  padding: 36px 22px 30px 34px;
+  padding: 14px 22px 30px 24px;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -268,9 +293,8 @@ ul.two-column li {
 
 .left-column {
   float: left;
-  width: 160px;
+  width: 230px;
   margin-right: 20px;
-  word-wrap: break-word;
 }
 
 .right-column {
@@ -279,12 +303,22 @@ ul.two-column li {
 }
 
 .item {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .item:last-child {
   margin-bottom: 0;
 }
+
+.item .skills {
+  padding-top: 5px;
+  padding-bottom: 8px;
+}
+
+.item:last-child .skills {
+  padding-bottom: 0;
+}
+
 
 @media print {
   body {
@@ -315,6 +349,13 @@ ul.two-column li {
   .fa-external-link {
     display: none;
   }
+}
+
+.profile-label {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  margin-bottom: 12px;
+  font-weight: 500;
 }
 
 /* Components */
@@ -365,6 +406,7 @@ ul.two-column li {
 }
 
 .education-container .location {
+  margin-left: 0.3rem;
   padding-bottom: 6px;
   font-weight: 400;
 }
@@ -385,8 +427,20 @@ ul.two-column li {
 }
 
 .skill {
-  margin: .15em;
-  padding: .15em;
-  background: ghostwhite;
+  margin: .15rem;
+  padding: 0.2rem 0.4rem;
+  color: white;
+  background: rgba(86, 129, 122, 0.8);
   border-radius: 5px;
+}
+
+.sublink-small {
+  font-size: 0.6rem;
+  font-weight: 200;
+  color: dimgray;
+}
+
+.title h2 {
+  font-weight: 300;
+  letter-spacing: 2px;
 }
