@@ -14,7 +14,7 @@ handlebars.registerHelper({
   eq: (a, b) => a === b,
 });
 
-handlebars.registerHelper('breaklines', (text) => {
+handlebars.registerHelper('breaklines', text => {
   let formatted = handlebars.Utils.escapeExpression(text);
   formatted = formatted.replace(/(\r\n|\n|\r)/gm, '<br>');
   return new handlebars.SafeString(formatted);
