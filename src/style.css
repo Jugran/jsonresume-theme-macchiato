@@ -209,16 +209,39 @@ ul.two-column li {
   padding-left: 0;
 }
 
-/* @page {
+@page {
   size: A4;
-} */
+}
 
 .container {
   padding-top: 10px;
 }
 
+.profile-header {
+  white-space: nowrap;
+}
+
+.resume-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.grow {
+  flex-grow: 1;
+  max-width: 40%;
+  margin-right: 50px;
+}
+
 .about-container {
-  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 80px;
 }
 
 .keyline {
@@ -277,12 +300,12 @@ ul.two-column li {
 /* Layouts */
 .page {
   background: white;
-  width: 612px;
-  min-height: 792px;
+  width: 734px;
+  height: 1014px;
   display: block;
   margin: 0 auto;
   border-top: 10px solid #56817A;
-  padding: 14px 22px 30px 24px;
+  padding: 20px 30px 25px 30px;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -376,7 +399,7 @@ ul.two-column li {
 
 .info-tag-container .fa {
   font-size: 14px;
-  width: 12px;
+  width: fit-content;
   margin-right: 5px;
   text-align: center;
   vertical-align: middle;
@@ -409,7 +432,8 @@ ul.two-column li {
   text-transform: none;
   display: inline-block;
   vertical-align: middle;
-  width: 139px;
+  width: fit-content;
+  margin-right: 15px;
 }
 
 .references-container .fa {

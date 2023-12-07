@@ -1,13 +1,16 @@
 {{#resume.basics}}
-<header class="resume-header clearfix">
-    <div class="profile-header pull-left">
+<div class="resume-header">
+    <div class="profile-header">
         <h1>{{name}}</h1>
         <h2 class="profile-label">{{label}}</h2>
     </div>
-    <div class="profile-pic pull-right">
+    {{!-- <div class="profile-pic pull-right">
         {{#if picture}}
         <img src="{{picture}}" alt="profile-pic">
         {{/if}}
+    </div> --}}
+    <div class="grow">
+        {{> about }}
     </div>
-</header>
+</div>
 {{/resume.basics}}
