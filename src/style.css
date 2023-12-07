@@ -470,8 +470,9 @@ ul.two-column li {
 }
 
 .sublink-small {
-  font-size: 0.6rem;
+  font-size: 10px;
   font-weight: 200;
+  padding-bottom: 10px;
   color: dimgray;
 }
 
