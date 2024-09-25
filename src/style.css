@@ -363,7 +363,7 @@ ul.two-column li {
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 20px 0 30px;
+    padding: 20px 0 0;
     box-shadow: none;
   }
 
