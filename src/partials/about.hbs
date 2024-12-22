@@ -1,6 +1,5 @@
-{{#resume.basics}}
 <div class="about-container">
-    {{> title value="About"}}
+    {{!-- {{> title value="About"}} --}}
 
     {{#if location}}
         {{#location}}
@@ -23,11 +22,9 @@
     {{#if website}}
         {{> info-tag text=this.website icon="fa-globe" url=this.website}}
     {{/if}}
-
     {{#if profiles}}
         {{#each profiles}}
             {{> social}}
         {{/each}}
     {{/if}}
-</section>
-{{/resume.basics}}
+</div>
